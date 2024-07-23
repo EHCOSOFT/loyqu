@@ -1,0 +1,23 @@
+.ico {
+    background-size: cover !important;
+    display: inline-block;
+}
+
+
+.i-minus {
+    background: url(../img/ico/i-minus.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-plus {
+    background: url(../img/ico/i-plus.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-x {
+    background: url(../img/ico/i-x.png);
+    height: 20px;
+    width: 20px;
+}
