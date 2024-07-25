@@ -41,6 +41,18 @@
     --primary: #D8155C;
     --secondary: #FFCE06;
     --white: white;
+    --black: #000000;
+    --black-950: #262626;
+    --black-900: #3D3D3D;
+    --black-800: #454545;
+    --black-700: #4F4F4F;
+    --black-600: #5D5D5D;
+    --black-500: #6D6D6D;
+    --black-400: #888888;
+    --black-300: #B0B0B0;
+    --black-200: #D1D1D1;
+    --black-100: #E7E7E7;
+    --black-50: #F6F6F6;
     --font-sans-serif: "Pretendard", sans-serif;
     --text-xxl: 24px;
     --text-xl: 20px;
@@ -612,6 +624,11 @@ main {
     color: #4E5056;
 }
 
+.btn-black {
+    background: var(--black);
+    color: var(--white);
+}
+
 /* **************************************** *
  * input
  * **************************************** */
@@ -680,7 +697,7 @@ input::placeholder {
 
     .input-group input {
         font-size: 18px;
-        padding: 16px 20px;
+        padding: 12px 16px;
     }
 }
 
@@ -714,7 +731,60 @@ input::placeholder {
 
 }
 
+/* search */
+.search-group {
+    position: relative;
+}
 
+.search-area {
+    position: relative;
+}
+
+.search-group .btn-search {
+    background: url(../img/ico/i-searcha.png);
+    background-size: cover;
+    border: 0;
+    height: 20px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+.search-group button {
+    flex: 0 0 auto;
+    height: 42px;
+}
+
+.search-list {
+    width: 100%;
+}
+
+.search-list ul {
+    border: 1px solid var(--black-200);
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+.search-list ul li {
+    border-bottom: 1px solid var(--black-200);
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: left;
+}
+
+.search-list ul li:last-child {
+    border-bottom: 0;
+}
+
+@media (min-width:992px) {
+    .search-group button {
+        flex: 0 0 auto;
+        height: 47px;
+    }
+}
 /* **************************************** *
  * MODAL
  * **************************************** */
@@ -805,6 +875,7 @@ input::placeholder {
 
 .modal-body p {
     color: var(--black-800);
+    font-size: var(--text-md);
 }
 
 .modal-body p.left {
@@ -898,4 +969,41 @@ input::placeholder {
     .tab-content p {
         font-size: var(--text-xl);
     }
+}
+
+
+/* **************************************** *
+ * mbsc
+ * **************************************** */
+.mbsc-ios.mbsc-datepicker .mbsc-calendar-cell,
+.mbsc-ios.mbsc-datepicker .mbsc-calendar-cell-inner,
+.mbsc-ios.mbsc-datepicker .mbsc-calendar-grid {
+    background: var(--white);
+    font-family: var(--font-sans-serif);
+}
+
+.mbsc-calendar-title {
+    font-family: var(--font-sans-serif);
+}
+
+.mbsc-ios.mbsc-selected .mbsc-calendar-cell-text {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.mbsc-ios.mbsc-hover .mbsc-calendar-cell-text {
+    background: none;
+}
+
+.mbsc-ios.mbsc-calendar-today,
+.mbsc-ios.mbsc-calendar-week-nr {
+    color: var(--primary);
+}
+
+.mbsc-ios.mbsc-calendar-button.mbsc-button {
+    color: var(--primary);
+}
+
+.mbsc-ios.mbsc-scroller-pointer .mbsc-scroller-wheel-item.mbsc-selected {
+    color: var(--primary);
 }

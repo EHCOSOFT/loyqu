@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>LOYQU</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <!-- Start : Header-->
+        <!-- End : Header-->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header-wrap">
+                    <a href="#" class="header-logo">
+                        <img src="img/logo.png" alt="LOYQU">
+                    </a>
+                    <ul>
+                        <li><a href="javascript:void(0);">한국어</a></li>
+                        <li><a href="javascript:void(0);">로그인</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Start : Main-->
+        <main>
+            <section class="reservation">
+                <div class="container">
+                    <h1>내 여행</h1>
+                    <div class="res-wrap">
+                        <ul class="res-list">
+                            <li>
+                                <div class="res-area">
+                                    <h4>2024년 06월 12일 (수)</h4>
+                                    <div class="res">
+                                        <div class="res-top">
+                                            <p><span class="primary">예약 확정</span><a href="#">예약 상세 보기<i
+                                                        class="ico i-arrow-right"></i></a></p>
+                                            <div class="res-info">
+                                                <img src="img/product/product-01.png" alt="">
+                                                <div class="res-info-area">
+                                                    <h3>상품제목</h3>
+                                                    <p>예약이 확정 되었습니다. 상품페이지 내
+                                                        이용 안내를 참고하여 이용해주세요.</p>
+                                                    <ul>
+                                                        <li>홍길동</li>
+                                                        <li>010-1234-5678</li>
+                                                        <li>소나타</li>
+                                                        <li>12가3456</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="res-bot">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-md btn-gray open-modal" data-modal-id="orderCompleteModal">예약 취소</button>
+                                                <button type="button" class="btn btn-md btn-primary open-modal"
+                                                    data-modal-id="infoModal">이용 안내</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="res-area">
+                                    <div class="res">
+                                        <div class="res-top">
+                                            <p><span class="gray">예약 취소</span><a href="#">예약 상세 보기<i
+                                                        class="ico i-arrow-right"></i></a></p>
+                                            <div class="res-info">
+                                                <img src="img/product/product-01.png" alt="">
+                                                <div class="res-info-area">
+                                                    <h3>상품제목</h3>
+                                                    <p>예약이 확정 되었습니다. 상품페이지 내
+                                                        이용 안내를 참고하여 이용해주세요.</p>
+                                                    <ul>
+                                                        <li>홍길동</li>
+                                                        <li>010-1234-5678</li>
+                                                        <li>소나타</li>
+                                                        <li>12가3456</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="res-bot">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-md btn-primary">다시 예약하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="res-area">
+                                    <div class="res">
+                                        <div class="res-top">
+                                            <p><span class="orange">지난 여행</span><a href="#">예약 상세 보기<i
+                                                        class="ico i-arrow-right"></i></a></p>
+                                            <div class="res-info">
+                                                <img src="img/product/product-01.png" alt="">
+                                                <div class="res-info-area">
+                                                    <h3>상품제목</h3>
+                                                    <p>예약이 확정 되었습니다. 상품페이지 내
+                                                        이용 안내를 참고하여 이용해주세요.</p>
+                                                    <ul>
+                                                        <li>홍길동</li>
+                                                        <li>010-1234-5678</li>
+                                                        <li>소나타</li>
+                                                        <li>12가3456</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="res-bot">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-md btn-primary">다시 예약하기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- End : Main-->
+
+
+    </div>
+
+    <!-- S : infoModal  :: 이용 안내-->
+    <div id="infoModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content modal-sm">
+                <div class="modal-header">
+                    <h3 class="modal-title">이용 안내</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="left">
+                        1. 해당요금은 승하차 위치가 시내권인 경우에 해당됩니다. 승하차 위치가 외곽에 있는 경우 거리에 따른 추가요금이 발생할 수 있습니다.<br>
+                        2. 이용시간 외 추가로 이용하시는 경우 시간당 추가운임을 기사님에게 직접 결제하시면 됩니다.<br>
+                        3. 여행당일 픽업시간에 타는 곳에서 기사님을 만나실 수 있습니다.<br>
+                        4. 개별 입장료, 개인 식대 등은 불포함 된 상품입니다.<br>
+                        5. 반려견 동반 시 이용에 제한이 있을 수 있습니다. 사전에 고객센터로 연락 주시기를 부탁드립니다.<br>
+                        6. 고객님의 휴대전화번호로 기사님의 성함과 연락처가 전달됩니다, 해당 연락처로 기사님과 커뮤니케이션할 수 있습니다.<br>
+                        7. 취소 수수료
+                    </p>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : infoModal -->
+
+
+     <!-- S : orderCompleteModal :: 예약 취소 -->
+     <div id="orderCompleteModal" class="modal-wrap">
+        <div class="modal-inner">
+            <div class="modal-content modal-sm">
+                <div class="modal-body">
+                    <h1>예약 취소</h1>
+                    <p>
+                        취소하는 경우 취소수수료 XX원을<br>제외한 XX원이 취소 됩니다.
+                    </p>
+                    <p>계속 진행하시겠습니까?</p>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-lg btn-primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : orderCompleteModal -->
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/mobiscroll.jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

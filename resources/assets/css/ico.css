@@ -21,3 +21,15 @@
     height: 20px;
     width: 20px;
 }
+
+.i-chat-none {
+    background: url(../img/ico/i-chat-none.png);
+    height: 80px;
+    width: 80px;
+}
+
+.i-arrow-right {
+    background: url(../img/ico/i-arrow-right.png);
+    height: 12px;
+    width: 12px;
+}
