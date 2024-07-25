@@ -3,32 +3,32 @@ $(document).ready(function () {
     // 공통 jQuery 코드 (모바일과 PC 모두에 적용)
     function applyCommonjQuery() {
         $("#header").append(Header());
-        $("#footer").append(Footer());
-
+        
         function Header() {
             return `
-            
-            `
-        };
-
-        function Footer() {
-            return `
             <div class="container">
-                    <div class="footer-wrap">
-                        <div class="footer-info">
+                <div class="header-wrap">
+                    <a href="#" class="header-logo">
+                        <img src="img/logo.png" alt="LOYQU">
+                    </a>
+                    <ul>
+                        <li class="dropdown">
                             <a href="javascript:void(0);">
-                                <img src="img/logo-w.png" alt="OCEAN AI">
+                                <i class="ico i-global"></i>한국어<i class="ico i-dropdown"></i>
                             </a>
-                            <div class="footer-text">
-                                <h6>부산광역시 남구 신선로 428, 410-9호<br class="mo">(용당동, 동명대학교 국제산학협력관)</h6>
-                                <h6>+82-00-000-0000</h6>
-                                <h6>abc@gmail.com</h6>
+                            <div class="dropdown-list">
+                                <ul>
+                                    <li><a href="#">한국어</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
                             </div>
-                        </div> 
-                        <hr>
-                        <p>@ 2024 OCEANAI. ALL RIGHTS RESERVED</p>
-                    </div>
+                        </li>
+                        <li><a href="javascript:void(0);"><i class="ico i-login"></i>로그인</a></li>
+                       <!-- <li><a href="javascript:void(0);"><i class="ico i-mypage"></i>마이페이지</a></li>
+                        <li><a href="javascript:void(0);"><i class="ico i-logout"></i>로그아웃</a></li> -->
+                    </ul>
                 </div>
+            </div>
             `
         };
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
         });
 
         // detailSwiper
-        var swiper = new Swiper(".detailSwiper", {
+        var detailSwiper = new Swiper(".detailSwiper", {
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -76,7 +76,7 @@ $(document).ready(function () {
         });
 
         // orderSwiper
-        var swiper = new Swiper(".orderSwiper", {
+        var orderSwiper = new Swiper(".orderSwiper", {
             navigation: {
                 nextEl: ".order-swiper-button-next",
                 prevEl: ".order-swiper-button-prev",
@@ -85,7 +85,7 @@ $(document).ready(function () {
             spaceBetween: 12,
         });
 
-        var swiper = new Swiper(".orderSwiper02", {
+        var orderSwiper02 = new Swiper(".orderSwiper02", {
             navigation: {
                 nextEl: ".order-swiper-button-next-02",
                 prevEl: ".order-swiper-button-prev-02",
@@ -103,7 +103,7 @@ $(document).ready(function () {
                 display: 'anchored',
             });
 
-            $('.timepicker ')
+        $('.timepicker ')
             .mobiscroll()
             .datepicker({
                 controls: ['time'],

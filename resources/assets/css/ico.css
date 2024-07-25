@@ -33,3 +33,81 @@
     height: 12px;
     width: 12px;
 }
+
+.i-phone {
+    background: url(../img/ico/i-phone.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-google {
+    background: url(../img/ico/i-google.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-apple {
+    background: url(../img/ico/i-apple.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-chevron-right-g {
+    background: url(../img/ico/i-chevron-right-g.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-arrow-left {
+    background: url(../img/ico/i-arrow-left.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-eyes-none {
+    background: url(../img/ico/i-eyes-none.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-success {
+    background: url(../img/ico/i-number-success.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-input-close {
+    background: url(../img/ico/i-input-close.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-login {
+    background: url(../img/ico/i-login.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-global {
+    background: url(../img/ico/i-global.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-dropdown {
+    background: url(../img/ico/i-dropdown.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-logout {
+    background: url(../img/ico/i-logout.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-mypage {
+    background: url(../img/ico/i-mypage.png);
+    height: 16px;
+    width: 16px;
+}

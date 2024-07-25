@@ -9,9 +9,6 @@
  * File       : styles.css
  * Date       : 2024. 07. 24.
  *
- * SUMMARY:
- * 01) UI-A-008-1
- * 02) UI-A-009
  */
 
 /* **************************************** *
@@ -863,4 +860,198 @@
         flex: 0 0 auto;
         width: 100%;
     }
+}
+
+/* **************************************** *
+ * UI-A-005
+ * **************************************** */
+.login {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.login-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.login-area {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-area .btn-group {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-area h6 {
+    color: var(--black);
+    font-size: var(--text-xl);
+}
+
+.login-area p {
+    color: var(--black-500);
+    font-size: var(--text-md);
+    font-weight: 400;
+    margin: 16px 0 32px 0;
+}
+
+.btn-login-number {
+    font-size: var(--text-lg);
+    height: 48px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn-login {
+    background: var(--white);
+    border-radius: 100px;
+    border: 1px solid var(--black-50);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);
+    color: var(--black);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    height: 48px;
+    position: relative;
+    width: 100%;
+}
+
+.btn-login i {
+    position: absolute;
+    left: 12px;
+}
+
+.login-wrap a {
+    color: var(--black-500);
+    font-size: var(--text-lgDd);
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .login-area h6 {
+        font-size: var(--text-xxl);
+    }
+
+    .login-area p {
+        font-size: var(--text-lg);
+    }
+
+    .btn-login i {
+        left: 16px;
+    }
+}
+
+.sub-content {
+    display: flex;
+    height: calc(100vh - 48px);
+}
+
+.sub-content .container {
+    height: 100%;
+    width: 100%;
+}
+
+.sub-content-wrap {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 32px 0;
+    width: 100%;
+}
+
+.sub-content-wrap h1 {
+    color: var(--black);
+    font-size: var(--text-xxl);
+}
+
+.sub-content-wrap p {
+    color: var(--black-500);
+    font-size: var(--text-lg);
+    font-weight: 400;
+    margin: 8px 0 40px 0;
+}
+
+.terms {
+    width: 100%;
+}
+
+.sub-content-wrap button {
+    font-size: var(--text-lg);
+    margin: auto 0 0 0;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .sub-content-wrap {
+    }
+}
+
+
+.join-complete {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 120px 0 0 0;
+    width: 100%;
+}
+
+.join-complete img {
+    height: 120px;
+}
+
+.join-complete p {
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .join-complete {
+        margin: 100px 0 0 0;
+    }
+}
+
+.terms-scroll {
+    overflow-y: scroll;
+    height: calc(100vh - 316px);
+}
+
+.terms-scroll::-webkit-scrollbar {
+    background: none;
+    width: 4px;
+}
+
+.terms-scroll::-webkit-scrollbar-thumb {
+    background: var(--black-300);
+    border-radius: 100px;
+}
+
+.number-count {
+    border: 1px solid var(--black-100);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.number-count li {
+    align-items: center;
+    border-bottom: 1px solid var(--black-100);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+}
+
+.number-count li:last-child {
+    border: 0;
 }
