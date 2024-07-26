@@ -1036,12 +1036,27 @@ input::placeholder {
 
 /* search */
 .search-group {
+    align-items: center;
+    display: flex;
+    gap: 8px;
     position: relative;
     width: 100%;
 }
 
 .search-area {
+    align-items: center;
+    display: flex;
+    gap: 8px;
     position: relative;
+    width: 100%;
+}
+
+.search-group input {
+    border: 1px solid var(--black-200);
+    border-radius: 8px;
+    color: var(--black-900);
+    font-size: var(--text-md);
+    padding: 12px 16px;
     width: 100%;
 }
 
@@ -1059,11 +1074,17 @@ input::placeholder {
 
 .search-group button {
     flex: 0 0 auto;
+    position: relative;
     height: 42px;
 }
 
 .search-list {
+    display: none;
     width: 100%;
+}
+
+.search-list.active {
+    display: block;
 }
 
 .search-list ul {
@@ -1074,8 +1095,12 @@ input::placeholder {
 }
 
 .search-list ul li {
+    align-items: center;
     border-bottom: 1px solid var(--black-200);
     cursor: pointer;
+    font-weight: 400;
+    display: flex;
+    gap: 8px;
     padding: 8px 0;
     text-align: left;
 }
@@ -1087,7 +1112,6 @@ input::placeholder {
 @media (min-width:992px) {
     .search-group button {
         flex: 0 0 auto;
-        height: 47px;
     }
 }
 

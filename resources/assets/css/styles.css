@@ -676,6 +676,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 100%;
 }
 
 .res-top p {
@@ -857,6 +858,7 @@
     }
 
     .res-bot .btn-group button {
+        font-size: var(--text-lg);
         flex: 0 0 auto;
         width: 100%;
     }
