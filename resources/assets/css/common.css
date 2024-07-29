@@ -794,7 +794,7 @@ main {
     font-size: var(--text-md);
     flex: 0 0 auto;
     gap: 4px;
-    width: 80px;
+    width: 100px;
 }
 
 .input-group label span {

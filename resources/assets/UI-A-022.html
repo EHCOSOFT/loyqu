@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>LOYQU</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <!-- Start : Header-->
+        <header class="header" id="header"></header>
+        <!-- End : Header-->
+
+        <!-- Start : Main-->
+        <main>
+            <section class="reservation">
+                <div class="container">
+                    <ul class="cont-nav">
+                        <li>
+                            <a href="#">내 여행</a>
+                        </li>
+                        <li>
+                            <a href="#">내 정보</a>
+                        </li>
+                    </ul>
+                    <div class="mypage">
+                        <div class="input-wrap">
+                            <div class="input-group">
+                                <label for="">새 비밀번호</label>
+                                <input type="password">
+                            </div>
+                            <div class="input-group">
+                                <label for="">새 비밀번호 확인</label>
+                                <div class="input-area">
+                                    <input type="password">
+                                    <button type="button" class="btn btn-md btn-black">변경</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="#">탈퇴하기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- End : Main-->
+
+
+
+    </div>
+
+    <!-- S : secessionInfoModal :: 탈퇴안내 -->
+    <div id="secessionInfoModal" class="modal-wrap active">
+        <div class="modal-inner">
+            <div class="modal-content modal-sm">
+                <div class="modal-body">
+                    <h1>탈퇴</h1>
+                    <p>탈퇴를 하시겠습니까?</p>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-lg btn-primary">동의</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : secessionInfoModal -->
+
+    <!-- S : secessionCompleteModal :: 탈퇴완료 -->
+    <div id="secessionCompleteModal" class="modal-wrap active">
+        <div class="modal-inner">
+            <div class="modal-content modal-sm">
+                <div class="modal-body">
+                    <h1>탈퇴</h1>
+                    <p>정상적으로 탈퇴 되었습니다.</p>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : secessionCompleteModal -->
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/mobiscroll.jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
